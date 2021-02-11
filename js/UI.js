@@ -6,14 +6,14 @@ class UI {
   }
 
   /* Reseset classes of elements in Carousel */
-  resetCarouselClasses() {
+  carouselResetClasses() {
     items.forEach(item => item.classList.remove('active'));
     controls.forEach(control => control.classList.remove('active'));
   }
 
   /* Carousel Controlls */
   carouselControll() {
-    ui.resetCarouselClasses();
+    ui.carouselResetClasses();
     clearInterval(intervalF);
 
     const control = this,
@@ -30,7 +30,7 @@ class UI {
   }
 
   carouselSlidingPictures() {
-    ui.resetCarouselClasses();
+    ui.carouselResetClasses();
     if (current === items.length - 1) current = -1; // Check if current slide is last in array
     current++;
     controls[current].classList.add('active');
