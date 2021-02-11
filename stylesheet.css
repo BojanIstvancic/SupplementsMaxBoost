@@ -132,7 +132,7 @@ table {
 /* Styles Definition */
 
 :root {
-  --black: #000;
+  --black: #282828;
   --white: #fff;
   --primary-color: #16db93;
   --grey: #f2f3f5;
@@ -147,9 +147,13 @@ p {
   font-size: 0.9em;
 }
 
+/* Header Content */
 .header {
-  position: relative;
   display: flex;
+  position: fixed;
+  width: 100%;
+  background: var(--white);
+  z-index: 1;
 }
 
 .logo__container {
@@ -205,9 +209,10 @@ p {
   background-color: var(--black);
 }
 
-  .toggleNavBar .navBar__content {
-    width: 100%;
-  }
+.toggleNavBar .navBar__content {
+  width: 100%;
+  z-index: 3;
+}
 
 .navBar__item {
   padding: 1.25em 0.8em;
@@ -231,6 +236,8 @@ p {
   font-size: 1.1em;
 }
 
+i { color: var(--black); }
+
 .icon__number {
   position: absolute;
   top: -0.8em;
@@ -246,6 +253,60 @@ p {
   background-color: var(--primary-color);
   border-radius: 50%;
 }
+
+/* Header Content */
+/* Carousel Content */
+
+.carouselItem__container {
+  position: relative;
+  height: 40em;
+}
+
+.carouselItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.carouselItem__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: block;
+  transition: opacity .3s ease-out .45s;
+}
+
+.carouselItem.active .carouselItem__image{
+  opacity: 1;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0.9em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.controls ul {
+  list-style: none;
+}
+
+.controls ul li {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0.5em;
+  background: var(--grey);
+  cursor: pointer;
+}
+
+.controls ul li.active {
+  background: var(--primary-color);
+}
+
+/* Carousel Content */
+/* Footer Content */
 
 .footer {
   display: flex;
@@ -271,6 +332,7 @@ p {
   width: 1.2em;
   margin-right: 0.5em;
 }
+/* Footer Content */
 
 .placeholder {
   position: absolute;
