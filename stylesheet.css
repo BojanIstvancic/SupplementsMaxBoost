@@ -401,6 +401,10 @@ i {
 }
 
 /* Button */
+/* Info Content */
+
+/* Info Content */
+
 /* Footer Content */
 
 .footer {
@@ -417,13 +421,13 @@ i {
 
 .placeholder {
   position: absolute;
-  top: 44.3rem;
+  top: 70.4rem;
   left: 0;
   right: 0;
   height: 640px;
-  background: url(assets/Social-placeholder.png) center no-repeat;
+  background: url(assets/info-placeholder.png) center no-repeat;
   background-size: cover;
-  opacity: 0;
+  opacity: 0.5;
   pointer-events: none;
   z-index: 99;
 }
