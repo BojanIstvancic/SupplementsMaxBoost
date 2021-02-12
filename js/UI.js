@@ -12,7 +12,7 @@ class UI {
   }
 
   /* Carousel Controlls */
-  carouselControll() {
+  carouselControl() {
     ui.carouselResetClasses();
     clearInterval(intervalF);
 

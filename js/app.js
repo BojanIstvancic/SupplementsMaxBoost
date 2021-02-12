@@ -15,7 +15,7 @@ function eventListeners() {
   const navBarIcons = document.querySelectorAll('#navBar__icon');
   navBarIcons.forEach(navBarIcon => navBarIcon.addEventListener('click', ui.toggleNavBar));
 
-  controls.forEach(control => control.addEventListener('click', ui.carouselControll))
+  controls.forEach(control => control.addEventListener('click', ui.carouselControl))
 }
 
 eventListeners();
