@@ -157,16 +157,16 @@ p {
 }
 
 .logo__container {
-  padding: 0.8em 0.6em;
+  padding: 1.3em 0.6em;
 }
 
 .logo {
-  width: 2em;
+  width: 4.1em;
 }
 
 .logo--footer {
   margin-bottom: 2.6em;
-  width: 2.8em;
+  width: 5.4em;
 }
 
 .header__content {
@@ -272,8 +272,9 @@ i { color: var(--black); }
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;
   display: block;
+  object-fit: cover;
+  opacity: 0;
   transition: opacity .3s ease-out .45s;
 }
 
@@ -342,6 +343,7 @@ i { color: var(--black); }
   height: 640px;
   background: url(assets/header_index.png) center no-repeat;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0;
   pointer-events: none;
+  z-index: 99;
 }
