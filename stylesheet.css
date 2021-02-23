@@ -143,19 +143,31 @@ table {
 
 html {
   font-family: var(--font-family-primary);
+  color: var(--black);
 }
 
-p {
-  font-size: 0.9em;
+h1 {
+  font-size: 2.1em;
+  line-height: 1.1em;
+  font-weight: 900;
+  text-transform: uppercase;
 }
+
+.joinUs h1 { margin-bottom: 0.9em; }
 
 h3 {
   font-size: 0.8em;
   line-height: 1.7em;
   font-weight: 700;
   font-family: var(--font-family-secondary);
-  text-transform: uppercase;
 }
+
+p {
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.joinUs p { margin-bottom: 1.6em; }
 
 a { 
   font-weight: 600;
@@ -198,6 +210,8 @@ a {
   margin-bottom: 2.6em;
   width: 5.4em;
 }
+
+.logo--joinUs { display: none; }
 
 .header__content {
   flex: 1;
@@ -270,6 +284,11 @@ i {
   color: var(--black);
 }
 
+i.fa-paper-plane { 
+  margin-left: 1em;
+  color: var(--white); 
+}
+
 .icon__number {
   position: absolute;
   top: -0.8em;
@@ -322,6 +341,7 @@ i {
   left: 50%;
   transform: translate(-50%);
 }
+
 
 .controls ul {
   list-style: none;
@@ -409,7 +429,8 @@ i {
   text-transform: uppercase;
 }
 
-.button--info {
+.button--info,
+.button--joinUs {
   display: inline-block;
 }
 
@@ -432,18 +453,23 @@ i {
 .info__text {
   margin-bottom: 1.2em;
   padding: 1.2em 0;
-  text-transform: uppercase;
   color: var(--white);
   border-top: 0.3em solid var(--primary-color);
   border-bottom: 0.3em solid var(--white);
 }
-
-.info__text h1 {
-  font-size: 2.1em;
-  line-height: 1.1em;
-  font-weight: 900;
-}
 /* Info Content */
+
+/* Join Us Content */
+.joinUs {
+  padding: 5.6em 1.9em;
+  text-align: center;
+}
+
+.joinUs span {
+  text-transform: none;
+  color: var(--primary-color);
+}
+/* Join Us Content */
 
 /* Footer Content */
 
@@ -461,11 +487,11 @@ i {
 
 .placeholder {
   position: absolute;
-  top: 72.1rem;
+  top: 106.1rem;
   left: 0;
   right: 0;
   height: 640px;
-  background: url(assets/placeholder_info.png) center no-repeat;
+  background: url(assets/join-us-placeholder.png) center no-repeat;
   background-size: cover;
   opacity: 0;
   pointer-events: none;
