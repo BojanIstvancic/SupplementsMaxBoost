@@ -37,5 +37,11 @@ class UI {
     controls[current].classList.add('active');
     items[current].classList.add('active');
   }
+
+  /* Send Email */
+
+  sendEmail() {
+    window.open('mailto:suplementi.max.boost@gmail.com');
+  }
 }
 

@@ -1,6 +1,7 @@
 const ui = new UI(),
   items = document.querySelectorAll('.carouselItem'),
   controls = document.querySelectorAll('.control'),
+  sendEmailButton = document.querySelector('#sendEmailBtn')
   interval = 2000;
 
 let current = 0;
@@ -16,6 +17,7 @@ function eventListeners() {
   navBarIcons.forEach(navBarIcon => navBarIcon.addEventListener('click', ui.toggleNavBar));
 
   controls.forEach(control => control.addEventListener('click', ui.carouselControl))
+  sendEmailButton.addEventListener('click',ui.sendEmail)
 }
 
 eventListeners();
